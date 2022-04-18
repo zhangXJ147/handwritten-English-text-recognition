@@ -1,1 +1,1 @@
-You can put all your pictures here.
+You can put all your images here.
