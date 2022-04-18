@@ -334,7 +334,7 @@ class CTN(nn.Module):
         dpr = [x.item() for x in torch.linspace(0, drop_path_rate, sum(depths))]  # stochastic depth decay rule
         cur = 0
 
-        self.conv1 = nn.Conv2d(1, self.inplanes, kernel_size=5, stride=2, padding=2,
+        self.conv1 = nn.Conv2d(in_chans, self.inplanes, kernel_size=7, stride=2, padding=3,
                                bias=False)
         self.bn1 = self._norm_layer(self.inplanes)
         self.relu = nn.ReLU(inplace=True)
